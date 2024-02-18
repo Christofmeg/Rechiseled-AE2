@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "rechiseledae2:block/sky_stone_slated_end",
+    "side": "rechiseledae2:block/sky_stone_slated_side"
+  }
+}

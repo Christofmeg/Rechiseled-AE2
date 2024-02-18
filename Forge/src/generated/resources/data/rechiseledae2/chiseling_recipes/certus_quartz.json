@@ -1,0 +1,83 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "ae2:quartz_block"
+    },
+    {
+      "item": "ae2:quartz_bricks"
+    },
+    {
+      "item": "ae2:quartz_pillar"
+    },
+    {
+      "item": "ae2:chiseled_quartz_block"
+    },
+    {
+      "item": "ae2:cut_quartz_block"
+    },
+    {
+      "item": "ae2:smooth_quartz_block"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_bordered_connecting",
+      "item": "rechiseledae2:certus_quartz_block_bordered"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_brick_paving_connecting",
+      "item": "rechiseledae2:certus_quartz_block_brick_paving"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_chiseled_pillar_connecting",
+      "item": "rechiseledae2:certus_quartz_block_chiseled_pillar"
+    },
+    {
+      "item": "rechiseledae2:certus_quartz_block_chiseled_squares"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_connecting_connecting",
+      "item": "rechiseledae2:certus_quartz_block_connecting"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_crosses_connecting",
+      "item": "rechiseledae2:certus_quartz_block_crosses"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_diagonal_tiles_connecting",
+      "item": "rechiseledae2:certus_quartz_block_diagonal_tiles"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_pattern_connecting",
+      "item": "rechiseledae2:certus_quartz_block_pattern"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_rotated_bricks_connecting",
+      "item": "rechiseledae2:certus_quartz_block_rotated_bricks"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_rows_connecting",
+      "item": "rechiseledae2:certus_quartz_block_rows"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_scales_connecting",
+      "item": "rechiseledae2:certus_quartz_block_scales"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_small_tiles_connecting",
+      "item": "rechiseledae2:certus_quartz_block_small_tiles"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_squares_connecting",
+      "item": "rechiseledae2:certus_quartz_block_squares"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_stripes_connecting",
+      "item": "rechiseledae2:certus_quartz_block_stripes"
+    },
+    {
+      "connecting_item": "rechiseledae2:certus_quartz_block_tiles_connecting",
+      "item": "rechiseledae2:certus_quartz_block_tiles"
+    }
+  ],
+  "overwrite": false
+}
