@@ -7,7 +7,7 @@ plugins {
     id 'com.modrinth.minotaur' version '2.+'
 }
 
-archivesBaseName = "${mod_id}-forge-${supported_versions}"
+archivesBaseName = "${mod_id}-forge-${forge_supported_versions}"
 
 minecraft {
     mappings channel: mapping_channel, version: mapping_version
@@ -120,7 +120,7 @@ tasks.named('processResources', ProcessResources).configure {
 
             mod_id: mod_id,
             version: version,
-            mod_name: mod_name,
+            display_name: display_name,
             displayURL: displayURL,
             mod_authors: mod_authors,
             mod_description: mod_description,
@@ -131,8 +131,6 @@ tasks.named('processResources', ProcessResources).configure {
         expand replaceProperties + [project: project]
     }
 }
-
-
 
 jar.finalizedBy('reobfJar')
 

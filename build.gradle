@@ -7,7 +7,7 @@ subprojects {
     jar {
         manifest {
             attributes([
-                'Specification-Title'     : mod_name,
+                'Specification-Title'     : display_name,
                 'Specification-Vendor'    : mod_authors,
                 'Specification-Version'   : project.jar.archiveVersion,
                 'Implementation-Title'    : project.name,
@@ -65,7 +65,6 @@ subprojects {
     }
 
     tasks.withType(JavaCompile).configureEach {
-    
         it.options.encoding = 'UTF-8'
         it.options.release = 17
     }
@@ -74,7 +73,6 @@ subprojects {
     // metadata includes mapped dependencies which are not reasonably consumable by
     // other mod developers.
     tasks.withType(GenerateModuleMetadata) {
-
         enabled = false
     }
 }

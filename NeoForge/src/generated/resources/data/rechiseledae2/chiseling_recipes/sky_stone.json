@@ -1,0 +1,97 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "item": "ae2:sky_stone_brick"
+    },
+    {
+      "item": "ae2:sky_stone_small_brick"
+    },
+    {
+      "item": "ae2:smooth_sky_stone_block"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_big_tiles_connecting",
+      "item": "rechiseledae2:sky_stone_big_tiles"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_bordered_connecting",
+      "item": "rechiseledae2:sky_stone_bordered"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_brick_pattern_connecting",
+      "item": "rechiseledae2:sky_stone_brick_pattern"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_brick_paving_connecting",
+      "item": "rechiseledae2:sky_stone_brick_paving"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_chiseled_bricks_connecting",
+      "item": "rechiseledae2:sky_stone_chiseled_bricks"
+    },
+    {
+      "item": "rechiseledae2:sky_stone_cobbled"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_crushed_connecting",
+      "item": "rechiseledae2:sky_stone_crushed"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_diagonal_bricks_connecting",
+      "item": "rechiseledae2:sky_stone_diagonal_bricks"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_path_connecting",
+      "item": "rechiseledae2:sky_stone_path"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_rotated_bricks_connecting",
+      "item": "rechiseledae2:sky_stone_rotated_bricks"
+    },
+    {
+      "item": "rechiseledae2:sky_stone_slated"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_small_bricks_connecting",
+      "item": "rechiseledae2:sky_stone_small_bricks"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_small_tiles_connecting",
+      "item": "rechiseledae2:sky_stone_small_tiles"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_smooth_connecting",
+      "item": "rechiseledae2:sky_stone_smooth"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_smooth_brick_paving_connecting",
+      "item": "rechiseledae2:sky_stone_smooth_brick_paving"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_smooth_large_tiles_connecting",
+      "item": "rechiseledae2:sky_stone_smooth_large_tiles"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_smooth_rotated_bricks_connecting",
+      "item": "rechiseledae2:sky_stone_smooth_rotated_bricks"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_smooth_tiles_connecting",
+      "item": "rechiseledae2:sky_stone_smooth_tiles"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_squares_connecting",
+      "item": "rechiseledae2:sky_stone_squares"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_tiles_connecting",
+      "item": "rechiseledae2:sky_stone_tiles"
+    },
+    {
+      "connecting_item": "rechiseledae2:sky_stone_waves_connecting",
+      "item": "rechiseledae2:sky_stone_waves"
+    }
+  ],
+  "overwrite": false
+}
