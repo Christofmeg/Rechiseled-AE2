@@ -36,8 +36,8 @@ minecraft {
             args '--mod', mod_id, '--all',
                     '--output', file('src/generated/resources/'),
                     '--existing', file('src/main/resources/'),
-                    '--existing', file("${project(':Common').projectDir}/src/main/resources/") ,
-                    '--existing', file('src/test/resources/')
+                    '--existing', file("${project(':Common').projectDir}/src/main/resources/"),
+                    '--existing', file('src/generated/resources/')
             mods {
                 modDataRun {
                     source sourceSets.main
@@ -84,18 +84,18 @@ dependencies {
         compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
         runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
     }
-    // CONFIGURED
-    if (project.hasProperty('configured_version')) {
-        implementation fg.deobf("curse.maven:configured-457570:${configured_version}")
-    }
     // CATALOGUE
     if (project.hasProperty('catalogue_version')) {
         implementation fg.deobf("curse.maven:catalogue-459701:${catalogue_version}")
     }
+    // CONFIGURED
+    if (project.hasProperty('configured_version')) {
+        implementation fg.deobf("curse.maven:configured-457570:${configured_version}")
+    }
 
-    implementation fg.deobf("curse.maven:applied-energistics-2-223794:4647844") // https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2/files
+    implementation fg.deobf("curse.maven:applied-energistics-2-223794:5117032") // https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2/files
     implementation fg.deobf("curse.maven:rechiseled-558998:4872892") // https://www.curseforge.com/minecraft/mc-mods/rechiseled/files
-    implementation fg.deobf("curse.maven:fusion-connected-textures-854949:5005130") // https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures/files
+    implementation fg.deobf("curse.maven:fusion-connected-textures-854949:5129294") // https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures/files
     implementation fg.deobf("curse.maven:supermartijn642s-config-lib-438332:4715408") // https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib/files
     implementation fg.deobf("curse.maven:supermartijn642s-core-lib-454372:5102258") // https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib/files
 

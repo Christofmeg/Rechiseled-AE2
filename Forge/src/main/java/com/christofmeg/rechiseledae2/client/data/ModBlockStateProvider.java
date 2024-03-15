@@ -23,19 +23,19 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         Map<RegistryObject<Block>, String> certus_quartz = new HashMap<>();
         certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_BORDERED, "block/" + "certus_quartz_block_bordered");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_BRICK_PAVING,  "block/" + "certus_quartz_block_brick_paving");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_CHISELED_PILLAR,  "block/" + "certus_quartz_block_chiseled_pillar");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_CHISELED_SQUARES,  "block/" + "certus_quartz_block_chiseled_squares");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_CONNECTING,  "block/" + "certus_quartz_block_connecting");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_CROSSES,  "block/" + "certus_quartz_block_crosses");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_DIAGONAL_TILES,  "block/" + "certus_quartz_block_diagonal_tiles");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_PATTERN,  "block/" + "certus_quartz_block_pattern");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_ROTATED_BRICKS,  "block/" + "certus_quartz_block_rotated_bricks");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_ROWS,  "block/" + "certus_quartz_block_rows");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_SCALES,  "block/" + "certus_quartz_block_scales");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_SMALL_TILES,  "block/" + "certus_quartz_block_small_tiles");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_SQUARES,  "block/" + "certus_quartz_block_squares");
-        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_STRIPES,  "block/" + "certus_quartz_block_stripes");
+        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_BRICK_PAVING, "block/" + "certus_quartz_block_brick_paving");
+        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_CHISELED_PILLAR, "block/" + "certus_quartz_block_chiseled_pillar");
+//        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_CHISELED_SQUARES, "block/" + "certus_quartz_block_chiseled_squares");
+        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_CONNECTING, "block/" + "certus_quartz_block_connecting");
+        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_CROSSES, "block/" + "certus_quartz_block_crosses");
+        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_DIAGONAL_TILES, "block/" + "certus_quartz_block_diagonal_tiles");
+        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_PATTERN, "block/" + "certus_quartz_block_pattern");
+        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_ROTATED_BRICKS, "block/" + "certus_quartz_block_rotated_bricks");
+        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_ROWS, "block/" + "certus_quartz_block_rows");
+        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_SCALES, "block/" + "certus_quartz_block_scales");
+        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_SMALL_TILES, "block/" + "certus_quartz_block_small_tiles");
+        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_SQUARES, "block/" + "certus_quartz_block_squares");
+        certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_STRIPES, "block/" + "certus_quartz_block_stripes");
         certus_quartz.put(BlockRegistry.CERTUS_QUARTZ_BLOCK_TILES, "block/" + "certus_quartz_block_tiles");
         masterList.add(certus_quartz);
 
@@ -71,6 +71,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
 
+        block(BlockRegistry.CERTUS_QUARTZ_BLOCK_CHISELED_SQUARES, "block/" + "certus_quartz_block_chiseled_squares");
         block(BlockRegistry.SKY_STONE_COBBLED, "block/" + "sky_stone_cobbled");
         cubeColumn(BlockRegistry.SKY_STONE_SLATED, "block/" + "sky_stone_slated");
 
