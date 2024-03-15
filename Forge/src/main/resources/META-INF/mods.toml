@@ -22,5 +22,17 @@ license="${mod_license}"
     versionRange="${forge_minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="ae2"
+    mandatory=true
+    versionRange="ANY"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="rechiseled"
+    mandatory=true
+    versionRange="ANY"
+    ordering="NONE"
+    side="BOTH"
 [modproperties.${mod_id}]
     catalogueItemIcon="${catalogueItemIcon}"
