@@ -18,6 +18,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 
 public class FusionBlockStateProvider extends BlockStateProvider {
@@ -60,9 +61,10 @@ public class FusionBlockStateProvider extends BlockStateProvider {
 
                 CompletableFuture<Void> blockStateConnecting = getBlockStateConnecting(location, block, jsonPath, cache);
                 CompletableFuture<Void> blockModelConnecting = getBlockModelConnecting(location, block, jsonPath, cache);
+                CompletableFuture<Void> blockConnectingMcmeta = getBlockConnectingMcmeta(block, jsonPath, cache);
                 CompletableFuture<Void> itemModelConnecting = getItemModelConnecting(location, block, jsonPath, cache);
 
-                tasks.addAll(List.of(blockStateConnecting, blockModelConnecting, itemModelConnecting));
+                tasks.addAll(List.of(blockStateConnecting, blockModelConnecting, Objects.requireNonNull(blockConnectingMcmeta), itemModelConnecting));
             }
         }
 
@@ -102,6 +104,18 @@ public class FusionBlockStateProvider extends BlockStateProvider {
 
         Path recipePath = jsonPath.resolve("assets/" + RechiseledAE2.MOD_ID + "/models/block/" + block.getId().getPath() + "_connecting" + ".json");
         return DataProvider.saveStable(cache, blockModelConnecting, recipePath).thenAccept(result -> {});
+    }
+
+    @NotNull
+    private static CompletableFuture<Void> getBlockConnectingMcmeta(RegistryObject<Block> block, Path jsonPath, CachedOutput cache) {
+        JsonObject mcmetaFile = new JsonObject();
+
+        JsonObject connectionsType = new JsonObject();
+        connectionsType.addProperty("type", "connecting");
+        mcmetaFile.add("fusion", connectionsType);
+
+        Path recipePath = jsonPath.resolve("assets/" + RechiseledAE2.MOD_ID + "/textures/block/" + block.getId().getPath() + ".png.mcmeta");
+        return DataProvider.saveStable(cache, mcmetaFile, recipePath).thenAccept(result -> {});
     }
 
     @NotNull

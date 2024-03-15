@@ -1,6 +1,7 @@
 package com.christofmeg.rechiseledae2.common.data;
 
 import com.christofmeg.rechiseledae2.RechiseledAE2;
+import com.christofmeg.rechiseledae2.client.data.BlockTextureProvider;
 import com.christofmeg.rechiseledae2.client.data.FusionBlockStateProvider;
 import com.christofmeg.rechiseledae2.client.data.ModBlockStateProvider;
 import com.christofmeg.rechiseledae2.client.data.ModItemModelProvider;
@@ -30,6 +31,7 @@ public class DataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
         if (event.includeClient())
         {
+            gen.addProvider(true, new BlockTextureProvider(gen, existingFileHelper));
             gen.addProvider(true, new ModBlockStateProvider(output, existingFileHelper));
             gen.addProvider(true, new FusionBlockStateProvider(output, existingFileHelper));
             gen.addProvider(true, new ModItemModelProvider(output, existingFileHelper ));

@@ -1,4 +1,4 @@
-package com.christofmeg.rechiseledae2.client.data;
+package com.christofmeg.rechiseledae2.client;
 
 import appeng.items.parts.FacadeItem;
 import com.christofmeg.rechiseledae2.RechiseledAE2;
