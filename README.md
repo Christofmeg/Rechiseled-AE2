@@ -1,2 +1,2 @@
-# Rechiseled AE2
+# Rechiseled AE2 <a href="https://www.curseforge.com/minecraft/mc-mods/rechiseled-ae2"><img src="http://cf.way2muchnoise.eu/versions/987534.svg" style="max-width:100%;"></a> <a href="https://www.curseforge.com/minecraft/mc-mods/rechiseled-ae2"><img src="https://cf.way2muchnoise.eu/987534.svg" style="max-width:100%;"></a> <a href="https://modrinth.com/mod/rechiseled-ae2"><img src="https://img.shields.io/modrinth/dt/sDBUwZVY" style="max-width:100%;"></a>
  
