@@ -24,6 +24,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
+        withExistingParent("certus_quartz_block_chiseled_squares", modLoc("block/" + "certus_quartz_block_chiseled_squares"));
         withExistingParent("sky_stone_cobbled", modLoc("block/" + "sky_stone_cobbled"));
         withExistingParent("sky_stone_slated", modLoc("block/" + "sky_stone_slated"));
 
