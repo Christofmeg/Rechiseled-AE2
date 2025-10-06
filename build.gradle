@@ -1,3 +1,8 @@
+plugins {
+    // Required for NeoGradle
+    id "org.jetbrains.gradle.plugin.idea-ext" version "1.1.7"
+}
+
 subprojects {
     
     apply plugin: 'java'
@@ -7,14 +12,14 @@ subprojects {
     jar {
         manifest {
             attributes([
-                'Specification-Title'     : display_name,
-                'Specification-Vendor'    : mod_authors,
+                'Specification-Title'     : mod_name,
+                'Specification-Vendor'    : mod_author,
                 'Specification-Version'   : project.jar.archiveVersion,
                 'Implementation-Title'    : project.name,
                 'Implementation-Version'  : project.jar.archiveVersion,
-                'Implementation-Vendor'   : mod_authors,
+                'Implementation-Vendor'   : mod_author,
                 'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-                'Timestamp'              : System.currentTimeMillis(),
+                'Timestamp'               : System.currentTimeMillis(),
                 'Built-On-Java'           : "${System.getProperty('java.vm.version')} (${System.getProperty('java.vm.vendor')})",
                 'Built-On-Minecraft'      : minecraft_version
             ])
@@ -22,9 +27,7 @@ subprojects {
     }
 
     repositories {
-
         mavenCentral()
-
         maven {
             name = 'Sponge / Mixin'
             url = 'https://repo.spongepowered.org/repository/maven-public/'
@@ -34,18 +37,7 @@ subprojects {
             name = 'BlameJared Maven (CrT / Bookshelf)'
             url = 'https://maven.blamejared.com'
         }
-
         repositories {
-            /*
-            maven {
-                // location of the maven that hosts JEI files
-                name = "Progwml6 maven"
-                url = "https://dvs1.progwml6.com/files/maven/"
-                content {
-                    includeGroup "mezz.jei"
-                }
-            }
-             */
             maven {
                 // location of a maven mirror for JEI files, as a fallback
                 name = "ModMaven"
@@ -60,7 +52,11 @@ subprojects {
                     includeGroup "curse.maven"
                 }
             }
-
+			maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+			
         }
     }
 
