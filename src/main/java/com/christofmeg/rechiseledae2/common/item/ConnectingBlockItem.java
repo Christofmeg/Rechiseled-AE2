@@ -1,0 +1,24 @@
+package com.christofmeg.rechiseledae2.common.item;
+
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.block.Block;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.List;
+
+public class ConnectingBlockItem extends BlockItem {
+
+    public ConnectingBlockItem(Block block, Properties properties) {
+        super(block, properties);
+    }
+
+    @Override
+    public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, List<Component> components, @NotNull TooltipFlag tooltipFlag) {
+        components.add(Component.translatable("rechiseled.tooltip.connecting").withStyle(ChatFormatting.GRAY));
+    }
+}
