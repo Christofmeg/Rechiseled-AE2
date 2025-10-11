@@ -12,8 +12,8 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.concurrent.CompletableFuture;
 
-@SuppressWarnings("unused")
-@EventBusSubscriber(modid = RechiseledAE2.MOD_ID)
+@SuppressWarnings("removal,unused")
+@EventBusSubscriber(modid = RechiseledAE2.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
     private DataGenerators() {}
 
@@ -25,14 +25,12 @@ public class DataGenerators {
         PackOutput output = gen.getPackOutput();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-//        gen.addProvider(event.includeClient(), new ModLanguageProvider(output));
         gen.addProvider(event.includeClient(), new BlockTextureProvider(gen, existingFileHelper));
         gen.addProvider(event.includeClient(), new ModBlockStateProvider(output, existingFileHelper));
         gen.addProvider(event.includeClient(), new FusionBlockStateProvider(output, existingFileHelper));
         gen.addProvider(event.includeClient(), new ModItemModelProvider(output, existingFileHelper ));
 
         ModBlockTagsProvider blockTags = gen.addProvider(event.includeServer(), new ModBlockTagsProvider(output, lookupProvider, existingFileHelper));
-  //      gen.addProvider(event.includeServer(), new RechiseledRecipeProvider(gen));
     }
 
 }

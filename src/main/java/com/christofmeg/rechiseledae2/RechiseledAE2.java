@@ -10,29 +10,19 @@ import net.neoforged.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.annotation.Nonnull;
-
 @SuppressWarnings("unused")
 @Mod(RechiseledAE2.MOD_ID)
 public class RechiseledAE2 {
-
     public static final String MOD_ID = "rechiseledae2";
     public static final String MOD_NAME = "Rechiseled: AE2";
     public static final Logger LOGGER = LogManager.getLogger();
     public static final RechiseledRegistration REGISTRATION = RechiseledRegistration.get(MOD_ID);
 
     public RechiseledAE2(IEventBus modEventBus) {
-        init(modEventBus);
-    }
-
-    private void init(@Nonnull IEventBus modEventBus) {
         BlockRegistry.init(modEventBus);
         ItemRegistry.init(modEventBus);
         CreativeModeTabRegistry.CREATIVE_MODE_TABS.register(modEventBus);
         RecipeRegistration.init();
         REGISTRATION.registerDataProviders();
     }
-
-    //TODO lang file
-
 }
