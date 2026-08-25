@@ -13,7 +13,7 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 import java.util.concurrent.CompletableFuture;
 
 @SuppressWarnings("removal,unused")
-@EventBusSubscriber(modid = RechiseledAE2.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = RechiseledAE2.MOD_ID)
 public class DataGenerators {
     private DataGenerators() {}
 

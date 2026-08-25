@@ -45,6 +45,7 @@ public class RecipeRegistration {
         RechiseledAE2.REGISTRATION.chiselingEntry(CERTUS_QUARTZ, BlockRegistry.CERTUS_QUARTZ_BLOCK_STRIPES::get, getBlock("rechiseledae2:certus_quartz_block" + "_" + "stripes" + "_connecting"));
         RechiseledAE2.REGISTRATION.chiselingEntry(CERTUS_QUARTZ, BlockRegistry.CERTUS_QUARTZ_BLOCK_TILES::get, getBlock("rechiseledae2:certus_quartz_block" + "_" + "tiles" + "_connecting"));
 
+        RechiseledAE2.REGISTRATION.chiselingEntry(SKY_STONE, () -> AEBlocks.SKY_STONE_BLOCK, null);
         RechiseledAE2.REGISTRATION.chiselingEntry(SKY_STONE, () -> AEBlocks.SKY_STONE_BRICK, null);
         RechiseledAE2.REGISTRATION.chiselingEntry(SKY_STONE, () -> AEBlocks.SKY_STONE_SMALL_BRICK, null);
         RechiseledAE2.REGISTRATION.chiselingEntry(SKY_STONE, () -> AEBlocks.SMOOTH_SKY_STONE_BLOCK, null);
