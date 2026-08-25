@@ -33,4 +33,4 @@ plugins {
 }
 
 rootProject.name = 'Rechiseled AE2'
-include("common", "forge", "neoforge")
+include("common", "forge")

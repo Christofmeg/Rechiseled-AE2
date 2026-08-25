@@ -63,6 +63,7 @@ public class RechiseledRecipeProvider implements DataProvider {
         CompletableFuture<?> certusQuartzTask = chiselingRecipe(certus_quartz, cache, "certus_quartz");
 
         List<Item> sky_stone = new ArrayList<>();
+        sky_stone.add(AEBlocks.SKY_STONE_BLOCK.asItem());
         sky_stone.add(AEBlocks.SKY_STONE_BRICK.asItem());
         sky_stone.add(AEBlocks.SKY_STONE_SMALL_BRICK.asItem());
         sky_stone.add(AEBlocks.SMOOTH_SKY_STONE_BLOCK.asItem());
